@@ -52,22 +52,10 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.personnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.timeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.vehicletypeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.vehnoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ownerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.flatnoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.wingDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.entryBindingSource = new System.Windows.Forms.BindingSource(this.components);
-          //  this.apartmentDataSet1 = new AppartmentManagemnetSystem.apartmentDataSet1();
-           // this.entryTableAdapter = new AppartmentManagemnetSystem.apartmentDataSet1TableAdapters.entryTableAdapter();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.entryBindingSource)).BeginInit();
-           // ((System.ComponentModel.ISupportInitialize)(this.apartmentDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -281,90 +269,15 @@
             // 
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idDataGridViewTextBoxColumn,
-            this.personnameDataGridViewTextBoxColumn,
-            this.dateDataGridViewTextBoxColumn,
-            this.timeDataGridViewTextBoxColumn,
-            this.vehicletypeDataGridViewTextBoxColumn,
-            this.vehnoDataGridViewTextBoxColumn,
-            this.ownerDataGridViewTextBoxColumn,
-            this.flatnoDataGridViewTextBoxColumn,
-            this.wingDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.entryBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(17, 454);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(577, 150);
             this.dataGridView1.TabIndex = 47;
             // 
-            // idDataGridViewTextBoxColumn
-            // 
-            this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
-            this.idDataGridViewTextBoxColumn.HeaderText = "Id";
-            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
-            this.idDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // personnameDataGridViewTextBoxColumn
-            // 
-            this.personnameDataGridViewTextBoxColumn.DataPropertyName = "person_name";
-            this.personnameDataGridViewTextBoxColumn.HeaderText = "person_name";
-            this.personnameDataGridViewTextBoxColumn.Name = "personnameDataGridViewTextBoxColumn";
-            // 
-            // dateDataGridViewTextBoxColumn
-            // 
-            this.dateDataGridViewTextBoxColumn.DataPropertyName = "date";
-            this.dateDataGridViewTextBoxColumn.HeaderText = "date";
-            this.dateDataGridViewTextBoxColumn.Name = "dateDataGridViewTextBoxColumn";
-            // 
-            // timeDataGridViewTextBoxColumn
-            // 
-            this.timeDataGridViewTextBoxColumn.DataPropertyName = "time";
-            this.timeDataGridViewTextBoxColumn.HeaderText = "time";
-            this.timeDataGridViewTextBoxColumn.Name = "timeDataGridViewTextBoxColumn";
-            // 
-            // vehicletypeDataGridViewTextBoxColumn
-            // 
-            this.vehicletypeDataGridViewTextBoxColumn.DataPropertyName = "vehicle_type";
-            this.vehicletypeDataGridViewTextBoxColumn.HeaderText = "vehicle_type";
-            this.vehicletypeDataGridViewTextBoxColumn.Name = "vehicletypeDataGridViewTextBoxColumn";
-            // 
-            // vehnoDataGridViewTextBoxColumn
-            // 
-            this.vehnoDataGridViewTextBoxColumn.DataPropertyName = "veh_no";
-            this.vehnoDataGridViewTextBoxColumn.HeaderText = "veh_no";
-            this.vehnoDataGridViewTextBoxColumn.Name = "vehnoDataGridViewTextBoxColumn";
-            // 
-            // ownerDataGridViewTextBoxColumn
-            // 
-            this.ownerDataGridViewTextBoxColumn.DataPropertyName = "owner";
-            this.ownerDataGridViewTextBoxColumn.HeaderText = "owner";
-            this.ownerDataGridViewTextBoxColumn.Name = "ownerDataGridViewTextBoxColumn";
-            // 
-            // flatnoDataGridViewTextBoxColumn
-            // 
-            this.flatnoDataGridViewTextBoxColumn.DataPropertyName = "flat_no";
-            this.flatnoDataGridViewTextBoxColumn.HeaderText = "flat_no";
-            this.flatnoDataGridViewTextBoxColumn.Name = "flatnoDataGridViewTextBoxColumn";
-            // 
-            // wingDataGridViewTextBoxColumn
-            // 
-            this.wingDataGridViewTextBoxColumn.DataPropertyName = "wing";
-            this.wingDataGridViewTextBoxColumn.HeaderText = "wing";
-            this.wingDataGridViewTextBoxColumn.Name = "wingDataGridViewTextBoxColumn";
-            // 
             // entryBindingSource
             // 
             this.entryBindingSource.DataMember = "entry";
-           // this.entryBindingSource.DataSource = this.apartmentDataSet1;
-            // 
-            // apartmentDataSet1
-            // 
-           // this.apartmentDataSet1.DataSetName = "apartmentDataSet1";
-           // this.apartmentDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // entryTableAdapter
-            // 
-           // this.entryTableAdapter.ClearBeforeFill = true;
             // 
             // pictureBox1
             // 
@@ -406,12 +319,13 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
+            this.MaximizeBox = false;
             this.Name = "Entry";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Entry";
             this.Load += new System.EventHandler(this.Entry_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.entryBindingSource)).EndInit();
-           // ((System.ComponentModel.ISupportInitialize)(this.apartmentDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

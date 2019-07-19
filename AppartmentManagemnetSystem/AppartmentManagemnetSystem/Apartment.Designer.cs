@@ -56,12 +56,9 @@
             this.button1 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.apartBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            //this.apartmentDataSet = new AppartmentManagemnetSystem.apartmentDataSet();
-            //this.apartTableAdapter = new AppartmentManagemnetSystem.apartmentDataSetTableAdapters.apartTableAdapter();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.apartBindingSource)).BeginInit();
-            //((System.ComponentModel.ISupportInitialize)(this.apartmentDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -307,16 +304,6 @@
             // apartBindingSource
             // 
             this.apartBindingSource.DataMember = "apart";
-            //this.apartBindingSource.DataSource = this.apartmentDataSet;
-            // 
-            // apartmentDataSet
-            // 
-            //this.apartmentDataSet.DataSetName = "apartmentDataSet";
-            //this.apartmentDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // apartTableAdapter
-            // 
-            //this.apartTableAdapter.ClearBeforeFill = true;
             // 
             // pictureBox1
             // 
@@ -361,12 +348,13 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
+            this.MaximizeBox = false;
             this.Name = "Apartment";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Apartment";
             this.Load += new System.EventHandler(this.Apartment_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.apartBindingSource)).EndInit();
-           // ((System.ComponentModel.ISupportInitialize)(this.apartmentDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

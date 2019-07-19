@@ -45,18 +45,10 @@
             this.button3 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.brandnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.modelDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.yearDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.vehtypeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.parkingBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            //this.apartmentDataSet2 = new AppartmentManagemnetSystem.apartmentDataSet2();
-            //this.parkingTableAdapter = new AppartmentManagemnetSystem.apartmentDataSet2TableAdapters.parkingTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.parkingBindingSource)).BeginInit();
-           // ((System.ComponentModel.ISupportInitialize)(this.apartmentDataSet2)).BeginInit();
             this.SuspendLayout();
             // 
             // label3
@@ -207,62 +199,15 @@
             // 
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idDataGridViewTextBoxColumn,
-            this.brandnameDataGridViewTextBoxColumn,
-            this.modelDataGridViewTextBoxColumn,
-            this.yearDataGridViewTextBoxColumn,
-            this.vehtypeDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.parkingBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(12, 423);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(526, 150);
             this.dataGridView1.TabIndex = 35;
             // 
-            // idDataGridViewTextBoxColumn
-            // 
-            this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
-            this.idDataGridViewTextBoxColumn.HeaderText = "Id";
-            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
-            this.idDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // brandnameDataGridViewTextBoxColumn
-            // 
-            this.brandnameDataGridViewTextBoxColumn.DataPropertyName = "brand_name";
-            this.brandnameDataGridViewTextBoxColumn.HeaderText = "brand_name";
-            this.brandnameDataGridViewTextBoxColumn.Name = "brandnameDataGridViewTextBoxColumn";
-            // 
-            // modelDataGridViewTextBoxColumn
-            // 
-            this.modelDataGridViewTextBoxColumn.DataPropertyName = "model";
-            this.modelDataGridViewTextBoxColumn.HeaderText = "model";
-            this.modelDataGridViewTextBoxColumn.Name = "modelDataGridViewTextBoxColumn";
-            // 
-            // yearDataGridViewTextBoxColumn
-            // 
-            this.yearDataGridViewTextBoxColumn.DataPropertyName = "year";
-            this.yearDataGridViewTextBoxColumn.HeaderText = "year";
-            this.yearDataGridViewTextBoxColumn.Name = "yearDataGridViewTextBoxColumn";
-            // 
-            // vehtypeDataGridViewTextBoxColumn
-            // 
-            this.vehtypeDataGridViewTextBoxColumn.DataPropertyName = "veh_type";
-            this.vehtypeDataGridViewTextBoxColumn.HeaderText = "veh_type";
-            this.vehtypeDataGridViewTextBoxColumn.Name = "vehtypeDataGridViewTextBoxColumn";
-            // 
             // parkingBindingSource
             // 
             this.parkingBindingSource.DataMember = "parking";
-          //  this.parkingBindingSource.DataSource = this.apartmentDataSet2;
-            // 
-            // apartmentDataSet2
-            // 
-          //  this.apartmentDataSet2.DataSetName = "apartmentDataSet2";
-           // this.apartmentDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // parkingTableAdapter
-            // 
-          //  this.parkingTableAdapter.ClearBeforeFill = true;
             // 
             // Parking
             // 
@@ -286,13 +231,14 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
+            this.MaximizeBox = false;
             this.Name = "Parking";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Parking";
             this.Load += new System.EventHandler(this.Parking_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.parkingBindingSource)).EndInit();
-          //  ((System.ComponentModel.ISupportInitialize)(this.apartmentDataSet2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
